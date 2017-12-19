@@ -1,7 +1,7 @@
 # coding=utf-8
 from flask import render_template, jsonify
 from db import User, db
-from config import app, listData
+from config import app, listData, caseData
 
 db.init_app(app)
 
@@ -13,7 +13,7 @@ def index():
 
 @app.route('/case')
 def case():
-    return render_template('case.html', **{'list': listData})
+    return render_template('case.html', **{'list': caseData})
 
 
 @app.route('/addUser')
