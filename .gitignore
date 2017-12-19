@@ -11,3 +11,6 @@
 build/
 dist/
 .idea
+/.idea
+/.idea/*.xml
+/.idea/workspace.xml
