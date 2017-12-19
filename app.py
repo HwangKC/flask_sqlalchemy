@@ -1,6 +1,6 @@
 # coding=utf-8
 from flask import render_template, jsonify
-from db import User, db
+from model import db, User
 from config import app, listData, caseData
 
 db.init_app(app)

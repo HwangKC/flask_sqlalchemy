@@ -1,0 +1,12 @@
+
+.apt_generated
+.project
+.settings
+
+.idea
+*.iws
+*.iml
+*.ipr
+
+build/
+dist/
