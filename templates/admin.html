@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/font.css">
+    <link rel="stylesheet" href="/static/css/admin.css">
+</head>
+<body>
+
+<div class="nav-wrap">
+    <div class="logo">
+        <span>润缘管控平台</span>
+        <i class="fa fa-navicon"></i>
+    </div>
+    <div class="pull-left">
+        <a href="javascript:;">菜单</a>
+        <a href="javascript:;">菜单</a>
+    </div>
+    <div class="pull-right">
+        <a href="javascript:;">工单</a>
+        <a href="javascript:;">admin</a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <ul class="menu-wrap">
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-home"></i>
+                <span id="aa">首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-home"></i>
+                <span>监控中心</span>
+                <i class="icon fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu" style="display: block">
+                <li class="active">
+                    <a href="javascript:;"><span>地图展示</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><span>地图展示</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-home"></i>
+                <span>设备管理</span>
+                <i class="icon fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="javascript:;"><span>设备列表</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><span>设备管理</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><span>穿透管理</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><span>设备状态</span></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="main">
+    <div class="main-content">
+        <!-- start -->
+
+        <div class="content-top">
+            <div class="nav nav-pills">
+                <div class="pull-left">列表展示</div>
+                <div class="pull-right"><a href="/">首页</a> / <span>列表展示</span></div>
+            </div>
+        </div>
+        <div class="content-box">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>标题</th>
+                    <th>标题</th>
+                    <th>标题</th>
+                    <th>标题</th>
+                </tr>
+                <tr>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                </tr>
+                <tr>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                </tr>
+                <tr>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                </tr>
+                <tr>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                    <td>标题内容</td>
+                </tr>
+            </table>
+            <div style="height: 1500px"></div>
+        </div>
+
+        <!-- end -->
+    </div>
+</div>
+
+<script src="/static/js/jquery.js"></script>
+<script>
+    $(function () {
+        var menuWrap = $('.menu-wrap');
+        var submenu = $('.submenu');
+
+        $('.menu-wrap > li > a').on('click', function (ev) {
+            var self = $(this);
+            if (self.parent().hasClass('active')) {
+                self.next().slideUp(300);
+            } else {
+                self.next().slideDown(300);
+            }
+            self.parent().toggleClass('active');
+        });
+        submenu.on('click', 'li', function (ev) {
+            submenu.find('li').removeClass('active');
+            $(this).addClass('active');
+            ev.stopPropagation();
+        });
+    });
+</script>
+</body>
+</html>
