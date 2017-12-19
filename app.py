@@ -1,8 +1,11 @@
 # coding=utf-8
-from flask import render_template, jsonify
+from flask import Flask, render_template, jsonify
+from data_api import listData, caseData
 from model import db, User
-from config import app, listData, caseData
+import config
 
+app = Flask(__name__)
+app.config.from_object(config)
 db.init_app(app)
 
 
@@ -73,4 +76,4 @@ def internal_server_error(e):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
