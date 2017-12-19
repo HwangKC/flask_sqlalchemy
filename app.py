@@ -18,6 +18,10 @@ def index():
 def case():
     return render_template('case.html', **{'list': caseData})
 
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
+
 
 @app.route('/addUser')
 def add_user():
