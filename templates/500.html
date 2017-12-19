@@ -1,0 +1,18 @@
+{% extends  'base.html' %}
+
+{% block title %} I'm here, and Everywhere {% endblock %}
+
+{% block css %} {{ super() }} {% endblock %}
+
+{% block body %}
+<div class="container bg-color p-lg">
+    <div class="row">
+        <div class="col-sm-6 offset-3">
+            <img src="/static/img/signal.gif" alt="404">
+            <span class="text-secondary" style="font-size: 60px">404</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %} {% endblock %}

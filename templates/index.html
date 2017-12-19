@@ -1,40 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>I'm here, and Everywhere</title>
-    <link rel="stylesheet" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/css/app.css">
-</head>
-<body>
+{% extends  'base.html' %}
 
-<div class="container-fluid nav-wrap">
-    <div class="container">
-        <a href="javascript:;" class="home">SENSOR</a>
-        <a href="javascript:;">产品</a>
-        <a href="javascript:;">解决方案</a>
-        <a href="javascript:;">商业案例</a>
-        <div class="pos-right">
-            <a href="javascript:;">注册</a>
-            <span>|</span>
-            <a href="javascript:;">登录</a>
-        </div>
-    </div>
-</div>
+{% block title %} I'm here, and Everywhere {% endblock %}
 
+{% block css %} {{ super() }} {% endblock %}
+
+{% block banner %}
 <div class="container">
     <div class="banner">
         <h1>赋予万物智慧，从这里开始</h1>
         <p>物联网产品一览</p>
     </div>
 </div>
+{% endblock %}
 
+{% block body %}
 <div class="container oh">
     <div class="row">
         {% for item in list %}
             <div class="col-sm mt-3">
                 <div class="prod-item">
-                    <img class="img-fluid" src="../static/img/{{ item.pic }}" alt="">
+                    <img class="img-fluid" src="/static/img/{{ item.pic }}" alt="">
                     <div class="desc-wrap">
                         <h4 class="prod-title">{{ item.title }}</h4>
                         <p class="prod-desc">{{ item.info }}</p>
@@ -86,25 +71,13 @@
         </div>
     </div>
 </div>
+{% endblock %}
 
-<div class="container-fluid">
-    <div class="footer">
-        <div class="container">
-            <div class="pull-left">
-                <div>SENSOR</div>
-                <div>Copyright © 2018 SENSOR Co.,Ltd.京ICP备11223366号 京公网安备11010811223366号</div>
-            </div>
-            <div class="pull-right">
-                <span>隐私条款</span>
-                <span>用户协议</span>
-            </div>
-        </div>
-    </div>
-</div>
+{% block footer %} {{ super() }} {% endblock %}
 
-<script src="../static/js/jquery.js"></script>
-<script src="../static/js/popper.js"></script>
-<script src="../static/js/bootstrap.js"></script>
-<script src="../static/js/app.js"></script>
-</body>
-</html>
+{% block js %}
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/popper.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/app.js"></script>
+{% endblock %}

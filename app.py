@@ -1,23 +1,76 @@
-# -*- coding: utf-8 -*-
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
+# coding=utf-8
+from flask import render_template, jsonify
+from db import User, db
+from config import app, listData
 
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost:3306/py_db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-ma = Marshmallow(app)
+db.init_app(app)
 
-class User(db.Model):
-    __tablename__ = 'user'
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(40), unique=True)
-    email = db.Column(db.String(120), unique=True)
 
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
+@app.route('/')
+def index():
+    return render_template('index.html', **{'list': listData})
 
-    def __repr__(self):
-        return '<User %r>' % self.name
+
+@app.route('/case')
+def case():
+    return render_template('case.html', **{'list': listData})
+
+
+@app.route('/addUser')
+def add_user():
+    user1 = User('admin', 'admin@qq.com')
+    user2 = User('saturn', 'saturn@qq.com')
+
+    db.session.add(user1)
+    db.session.add(user2)
+
+    db.session.commit()
+    db.session.close()
+
+    return "<p>add succssfully!"
+
+
+@app.route('/query/all')
+def queryByAll():
+    users = User.query.all()  # 查询所有数据
+    if not users:
+        return "<p>No users exist! <a href='/adduser'>Add users first.</a></p>"
+
+    obj = {
+        'name': '',
+        'email': ''
+    }
+    for user in users:
+        obj['name'] = user.name
+        obj['email'] = user.email
+
+    return jsonify(obj)
+
+
+@app.route('/query/<name>')
+def queryByName(name):
+    user = User.query.filter_by(name=name).first()  # 查询数据
+
+    if not user:
+        return "<p>No user exist! <a href='/adduser'>Add user first.</a></p>"
+
+    obj = {
+        'name': user.name,
+        'email': user.email
+    }
+
+    return jsonify(obj)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('500.html'), 500
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

@@ -24,6 +24,14 @@ a {
     float: right;
 }
 
+.bg-color {
+    background-color: #f4f4f4;
+}
+
+.p-lg {
+    padding: 100px 0;
+}
+
 .oh {
     overflow: hidden
 }
@@ -75,8 +83,9 @@ a {
 
 /*------banner-----*/
 .banner,
-.case-banner {
-    height: 700px;
+.case-banner,
+.solution-banner {
+    height: 600px;
     text-align: center;
     margin: 0 -15px;
     padding-top: 100px;
@@ -88,14 +97,18 @@ a {
 }
 
 .case-banner {
-    height: 600px;
+    height: 520px;
     text-align: left;
     padding-top: 200px;
     font-weight: bold;
-    background-image: url("../img/case-banner1@2x.jpg");
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
 }
-.case-desc{
+
+.case-banner {
+    background-image: url("../img/case-banner1@2x.jpg");
+}
+
+.case-desc {
     width: 500px;
     padding: 20px;
     margin-left: 100px;
@@ -110,6 +123,29 @@ a {
 .case-banner p {
     font-size: 24px;
     margin: 0;
+}
+
+.partner {
+    line-height: 50px;
+    text-align: center;
+    background: #f8f8fa;
+}
+
+.partner .d-inline-block {
+    width: 100px;
+}
+
+.partner .d-inline-block img {
+    width: 100%;
+}
+
+/*------banner-------*/
+.case-xiaofang {
+    height: 400px;
+    background-image: url("../img/xiaofang@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*------list-----*/

@@ -1,124 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>I'm here, and Everywhere</title>
-    <link rel="stylesheet" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/css/app.css">
-</head>
-<body>
+{% extends  'base.html' %}
 
-<div class="container-fluid nav-wrap">
+{% block title %} I'm here, and Everywhere {% endblock %}
+
+{% block css %} {{ super() }} {% endblock %}
+
+{% block banner %}
     <div class="container">
-        <a href="javascript:;" class="home">SENSOR</a>
-        <a href="javascript:;">产品</a>
-        <a href="javascript:;">解决方案</a>
-        <a href="javascript:;">商业案例</a>
-        <div class="pos-right">
-            <a href="javascript:;">注册</a>
-            <span>|</span>
-            <a href="javascript:;">登录</a>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="case-banner">
-        <div class="case-desc">
-            <h1>物联网，无处不在</h1>
-            <p>The most profound technologies are</p>
-            <p>those that disappear</p>
-        </div>
-    </div>
-</div>
-
-<div class="container oh">
-    <div class="row">
-        {% for item in list %}
-            <div class="col-sm mt-3">
-                <div class="prod-item">
-                    <img class="img-fluid" src="../static/img/{{ item.pic }}" alt="">
-                    <div class="desc-wrap">
-                        <h4 class="prod-title">{{ item.title }}</h4>
-                        <p class="prod-desc">{{ item.info }}</p>
-                    </div>
-                </div>
-            </div>
-            {% if loop.index%3==0 %}
-                </div>
-
-                <div class="row">
-            {% endif %}
-        {% endfor %}
-        </div>
-
-    <div class="form-container">
-        <div class="form-wrap">
-            <label class="name">
-                <span class="title">姓名</span>
-                <input type="text" name="name" class="has-error" placeholder="姓名不能为空！">
-            </label>
-
-            <label class="name">
-                <span class="title">手机号码</span>
-                <input type="text" name="name">
-            </label>
-
-            <label class="name">
-                <span class="title">电子邮件</span>
-                <input type="text" name="name">
-            </label>
-
-            <label class="name">
-                <span class="title">公司名称</span>
-                <input type="text" name="name">
-            </label>
-
-            <label class="name">
-                <span class="title">通讯地址</span>
-                <input type="text" name="name">
-            </label>
-
-            <label class="console">
-                <span class="title">选择咨询类目</span>
-                <select name="target" class="">
-                    <option value="0" selected="selected" disabled="disabled">选择</option
-                    <option value="1">低功耗广域网</option>
-                    <option value="2">传感器厂商合作</option>
-                    <option value="3">业务方案商合作</option>
-                    <option value="4">新闻媒体合作</option>
-                    <option value="5">加入我们</option>
-                    <option value="6">其他</option>
-                </select>
-            </label>
-
-            <label class="scale">
-                <span class="title">咨询内容</span>
-                <textarea name="advisory" placeholder="请输入内容"></textarea>
-            </label>
-            <button type="button" class="submit">发送</button>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="footer">
-        <div class="container">
-            <div class="pull-left">
-                <div>SENSOR</div>
-                <div>Copyright © 2018 SENSOR Co.,Ltd.京ICP备11223366号 京公网安备11010811223366号</div>
-            </div>
-            <div class="pull-right">
-                <span>隐私条款</span>
-                <span>用户协议</span>
+        <div class="case-banner">
+            <div class="case-desc">
+                <h1>物联网，无处不在</h1>
+                <p>The most profound technologies are</p>
+                <p>those that disappear</p>
             </div>
         </div>
     </div>
-</div>
+    <div class="container partner">
+        <div class="row">
+            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/nk@3x.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/ms@3x.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/nk@3x.png" alt=""></a>
+            </div>
+            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/ms@3x.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
-<script src="../static/js/jquery.js"></script>
-<script src="../static/js/popper.js"></script>
-<script src="../static/js/bootstrap.js"></script>
-<script src="../static/js/app.js"></script>
-</body>
-</html>
+{% block body %}
+    <div class="container oh">
+        <div class="row p-lg-3">
+            <div class="col-sm-6">
+                <h4>南京消防</h4>
+                <h3>启动物联网消防指挥平台</h3>
+                <p>南京消防引入 SENSORO 物联网智慧消防火灾预警系统，采用多重感知、远距离物联网通信技术，及时进行灾情预警，为市民生命财产安全保驾护航。</p>
+            </div>
+
+            <div class="col-sm-4 offset-2">
+                <h3>60</h3>
+                <p>每 60 秒，SENSORO 物联网系统远程监测温湿度、可燃气体浓度变化，保护元宵节南京夫子庙灯会 60 万游客生命安全。</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="case-xiaofang">
+                <img src="/static/img/xiaofang@2x.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container oh">
+        <div class="row p-lg-3">
+            <div class="col-sm-6">
+                <h4>南京消防</h4>
+                <h3>启动物联网消防指挥平台</h3>
+                <p>南京消防引入 SENSORO 物联网智慧消防火灾预警系统，采用多重感知、远距离物联网通信技术，及时进行灾情预警，为市民生命财产安全保驾护航。</p>
+            </div>
+
+            <div class="col-sm-4 offset-2">
+                <h3>60</h3>
+                <p>每 60 秒，SENSORO 物联网系统远程监测温湿度、可燃气体浓度变化，保护元宵节南京夫子庙灯会 60 万游客生命安全。</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="case-xiaofang">
+                <img src="/static/img/xiaofang@2x.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %} {{ super() }} {% endblock %}
+
+{% block js %}
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/app.js"></script>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+{% block css %}
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/app.css') }}">
+{% endblock %}
+</head>
+<body>
+
+<div class="container-fluid nav-wrap">
+    <div class="container">
+        <a href="javascript:;" class="home">SENSOR</a>
+        <a href="/">产品</a>
+        <a href="javascript:;">解决方案</a>
+        <a href="/case">商业案例</a>
+        <div class="pos-right">
+            <a href="javascript:;">注册</a>
+            <span>|</span>
+            <a href="javascript:;">登录</a>
+        </div>
+    </div>
+</div>
+
+{% block banner %}{% endblock %}
+{% block body %}{% endblock %}
+
+{% block footer %}
+<div class="container-fluid">
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left">
+                <div>SENSOR</div>
+                <div>Copyright © 2018 SENSOR Co.,Ltd.京ICP备11223366号 京公网安备11010811223366号</div>
+            </div>
+            <div class="pull-right">
+                <span>隐私条款</span>
+                <span>用户协议</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}{% endblock %}
+</body>
+</html>
