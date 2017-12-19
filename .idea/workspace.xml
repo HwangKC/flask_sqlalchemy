@@ -2,86 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccd108e6-f6ce-48d6-a0b0-003f289a9968" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/banner@2x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/ms@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/nk@3x.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/signal.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/solution-banner.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/xiaofang@2x.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/500.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/db.py" />
-      <change beforePath="$PROJECT_DIR$/python2.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change beforePath="$PROJECT_DIR$/static/css/app.css" afterPath="$PROJECT_DIR$/static/css/app.css" />
       <change beforePath="$PROJECT_DIR$/templates/case.html" afterPath="$PROJECT_DIR$/templates/case.html" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_RESTful-0.3.6.dist-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/connections.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/CLIENT.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/CR.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/ER.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/FIELD_TYPE.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/FLAG.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/REFRESH.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/constants/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/converters.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/cursors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/release.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MySQLdb/times.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow-0.8.0.dist-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow/fields.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow/schema.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_marshmallow/sqla.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/__version__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/fields.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/inputs.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/paging.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/representations/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/representations/json.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/reqparse.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/utils/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/utils/cors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_restful/utils/crypto.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-2.15.0.dist-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/base.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/class_registry.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/decorators.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/exceptions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/fields.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/marshalling.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/ordereddict.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/orderedset.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/schema.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow/validate.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,8 +32,10 @@
       <file leaf-file-name="case.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/case.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+            <state relative-caret-position="671">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="37" />
+              <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="37" />
+              <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -296,10 +219,19 @@
       <option name="presentableId" value="Default" />
       <updated>1513319512322</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1513661281224</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513661281224</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -307,7 +239,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5862808" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -350,6 +282,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -604,8 +540,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/case.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state relative-caret-position="671">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="37" />
+          <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="37" />
+          <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="37" />
           <folding />
         </state>
       </provider>
