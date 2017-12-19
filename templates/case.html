@@ -5,27 +5,27 @@
 {% block css %} {{ super() }} {% endblock %}
 
 {% block banner %}
-    <div class="container">
-        <div class="case-banner">
-            <div class="case-desc">
-                <h1>物联网，无处不在</h1>
-                <p>The most profound technologies are</p>
-                <p>those that disappear</p>
-            </div>
+<div class="container">
+    <div class="case-banner">
+        <div class="case-desc">
+            <h1>物联网，无处不在</h1>
+            <p>The most profound technologies are</p>
+            <p>those that disappear</p>
         </div>
     </div>
-    <div class="container partner">
-        <div class="row">
-            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/nk@3x.png"></a></div>
-            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/ms@3x.png"></a></div>
-            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/nk@3x.png"></a></div>
-            <div class="col-sm-3"><a class="d-inline-block" href="javascript:;"><img src="/static/img/ms@3x.png"></a></div>
-        </div>
+</div>
+<div class="container partner">
+    <div class="row">
+        <div class="col-sm"><a class="d-inline-block" href="javascript:;"><img src="/static/img/nk@3x.png"></a></div>
+        <div class="col-sm"><a class="d-inline-block" href="javascript:;"><img src="/static/img/ms@3x.png"></a></div>
+        <div class="col-sm"><a class="d-inline-block" href="javascript:;"><img src="/static/img/nk@3x.png"></a></div>
+        <div class="col-sm"><a class="d-inline-block" href="javascript:;"><img src="/static/img/ms@3x.png"></a></div>
     </div>
+</div>
 {% endblock %}
 
 {% block body %}
-    {% for item in list %}
+{% for item in list %}
 <div class="container oh">
     <div class="row p-lg-3">
         <div class="col-sm-6">
@@ -45,7 +45,7 @@
         </div>
     </div>
 </div>
-    {% endfor %}
+{% endfor %}
 {% endblock %}
 
 {% block footer %} {{ super() }} {% endblock %}

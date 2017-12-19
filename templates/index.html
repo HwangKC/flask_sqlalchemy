@@ -16,40 +16,35 @@
 {% block body %}
 <div class="container oh">
     <div class="row">
-        {% for item in list %}
-            <div class="col-sm mt-3">
-                <div class="prod-item">
-                    <img class="img-fluid" src="/static/img/{{ item.pic }}" alt="">
-                    <div class="desc-wrap">
-                        <h4 class="prod-title">{{ item.title }}</h4>
-                        <p class="prod-desc">{{ item.info }}</p>
-                    </div>
+    {% for item in list %}
+        <div class="col-sm mt-3">
+            <div class="prod-item">
+                <img class="img-fluid" src="/static/img/{{ item.pic }}" alt="">
+                <div class="desc-wrap">
+                    <h4 class="prod-title">{{ item.title }}</h4>
+                    <p class="prod-desc">{{ item.info }}</p>
                 </div>
             </div>
-            {% if loop.index%3==0 %}
-                </div>
-
-                <div class="row">
-            {% endif %}
-        {% endfor %}
         </div>
+    {% if loop.index%3==0 %}
+    </div>
 
+    <div class="row">
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    {# form 宏 #}
+    {% macro input(title, name, value='', type='text') %}
+        <label class="{{ name }}">
+            <span class="title">{{ title }}</span>
+            <input type="{{ type }}" name="{{ name }}" value="{{ value|e }}">
+        </label>
+    {% endmacro %}
     <div class="form-container">
         <div class="form-wrap">
-            {# 定义宏 #}
-            {% macro input(title, name, value='', type='text') %}
-                <label class="{{ name }}">
-                    <span class="title">{{ title }}</span>
-                    <input type="{{ type }}" name="{{ name }}" value="{{ value|e }}">
-                </label>
-            {% endmacro %}
-
             {{ input('姓名','username') }}
             {{ input('手机号码','phone') }}
-            {{ input('电子邮件','email') }}
-            {{ input('公司名称','company ') }}
-            {{ input('通讯地址','location ') }}
-
             <label class="console">
                 <span class="title">选择咨询类目</span>
                 <select name="target" class="">
@@ -57,8 +52,6 @@
                     <option value="1">低功耗广域网</option>
                     <option value="2">传感器厂商合作</option>
                     <option value="3">业务方案商合作</option>
-                    <option value="4">新闻媒体合作</option>
-                    <option value="5">加入我们</option>
                     <option value="6">其他</option>
                 </select>
             </label>
