@@ -1,16 +1,2 @@
 
-.apt_generated
-.project
-.settings
-
-.idea
-*.iws
-*.iml
-*.ipr
-
-build/
-dist/
-.idea
-/.idea
-/.idea/*.xml
-/.idea/workspace.xml
+.idea/
