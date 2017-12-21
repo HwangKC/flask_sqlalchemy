@@ -18,6 +18,7 @@ def index():
 def case():
     return render_template('case.html', **{'list': caseData})
 
+
 @app.route('/admin')
 def admin():
     return render_template('admin.html')
@@ -25,8 +26,8 @@ def admin():
 
 @app.route('/addUser')
 def add_user():
-    user1 = User('admin', 'admin@qq.com')
-    user2 = User('saturn', 'saturn@qq.com')
+    user1 = User('张三', 'zhangsan', 'password', 1, '1111', 1)
+    user2 = User('李四', 'lisi', 'password', 0, '1111', 0)
 
     db.session.add(user1)
     db.session.add(user2)
@@ -41,29 +42,38 @@ def add_user():
 def queryByAll():
     users = User.query.all()  # 查询所有数据
     if not users:
-        return "<p>No users exist! <a href='/adduser'>Add users first.</a></p>"
+        return "<p>No users exist! <a href='/query/adduser'>Add users first.</a></p>"
 
-    obj = {
-        'name': '',
-        'email': ''
-    }
+    obj = {}
+    arr = []
     for user in users:
-        obj['name'] = user.name
-        obj['email'] = user.email
-
+        arr.append({
+            'cname': user.cname,
+            'ename': user.ename,
+            'password': user.password,
+            'is_admin': user.is_admin,
+            'company_id': user.company_id,
+            'enabled': user.enabled
+        })
+    obj['code'] = 200
+    obj['data'] = arr
     return jsonify(obj)
 
 
 @app.route('/query/<name>')
 def queryByName(name):
-    user = User.query.filter_by(name=name).first()  # 查询数据
+    user = User.query.filter_by(cname=name).first()  # 查询数据
 
     if not user:
         return "<p>No user exist! <a href='/adduser'>Add user first.</a></p>"
 
     obj = {
-        'name': user.name,
-        'email': user.email
+        'cname': user.cname,
+        'ename': user.ename,
+        'password': user.password,
+        'is_admin': user.is_admin,
+        'company_id': user.company_id,
+        'enabled': user.enabled
     }
 
     return jsonify(obj)
