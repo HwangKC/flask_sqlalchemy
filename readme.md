@@ -1,6 +1,7 @@
-## Python App
-
-> pip list --format=columns
+#### 查看项目依赖
+```base
+pip list --format=columns
+```
 
 <pre>
 Package          Version
@@ -22,6 +23,12 @@ Werkzeug         0.13
 > MySQL_python-1.2.5-cp27-none-win_amd64.whl
 
 > https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python
+
+
+#### 安装虚拟环境
+```base
+virtualenv venv
+```
 
 
 - 安装或升级：
