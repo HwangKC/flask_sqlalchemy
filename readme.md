@@ -8,15 +8,19 @@ Package          Version
 ---------------- -------
 click            6.7
 Flask            0.12.2
-Flask-SQLAlchemy 2.3.2
+Flask-Admin      1.4.2
+Flask-Login      0.4.1
+Flask-SQLAlchemy 2.0
+Flask-WTF        0.14.2
+gunicorn         19.7.1
 itsdangerous     0.24
 Jinja2           2.10
 MarkupSafe       1.0
-MySQL-python     1.2.5
 pip              9.0.1
 setuptools       28.8.0
 SQLAlchemy       1.1.15
 Werkzeug         0.13
+WTForms          2.1
 </pre>
 
 - Windows系统没这个还真没法玩
