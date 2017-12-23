@@ -6,10 +6,12 @@ from config import config
 
 app = Flask(__name__)
 app.config.from_object(config)
+
 db.init_app(app)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index():
     return render_template('index.html', **{'list': listData})
 
