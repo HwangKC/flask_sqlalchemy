@@ -1,8 +1,8 @@
 # coding=utf-8
 from flask import Flask, render_template, jsonify
-from data_api import listData, caseData
-from model import db, User
-import config
+from models.data_api import listData, caseData
+from models.model import db, User
+from config import config
 
 app = Flask(__name__)
 app.config.from_object(config)
@@ -21,7 +21,7 @@ def case():
 
 @app.route('/admin')
 def admin():
-    return render_template('admin.html')
+    return render_template('admin/main.html')
 
 
 @app.route('/addUser')
